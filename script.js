@@ -42,4 +42,38 @@ const subString = (string) => {
   return string.slice(string.length - 3);
 };
 console.log(subString("abcdefgh"));
+
+
+//7.Write a function that takes a string as argument.
+//The string contains the substring 'is'. Return the index of 'is'.
+const subString = "is";
+const findIndex = (string) => {
+  //const subString = "is";
+  return string.includes(subString)
+    ? string.indexOf(subString)
+    : "Does not have is in the given string";
+};
+console.log(findIndex("parise"));
+
+//8.Write a function that takes a string (a) as argument.
+//Extract the first half a. Return the result
+const findFirstHalf = (string) => {
+  return string.slice(0, string.length / 2);
+};
+console.log(findFirstHalf("abcdef"));
+
+
+//9.Write a function that takes a string (a) as argument.
+//Remove the last 3 characters of a. Return the result
+const removeCharacters = (string) => {
+  return string.slice(0, string.length - 3);
+};
+console.log(removeCharacters(prompt("Enter the string")));
+
+//10.Write a function that takes two numbers (a and b) as argument.
+//Return b percent of a
+const fidPercent = (a, b) => {
+  return (b / a) * 100;
+};
+console.log(fidPercent(100, 50));
 */
